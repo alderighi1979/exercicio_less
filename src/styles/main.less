@@ -58,6 +58,20 @@ section {
     padding: 56px 0;
 }
 
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+    img {
+        transition: ease 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
 .products {
     margin-top: 40px;
     display: grid;
@@ -85,6 +99,24 @@ section {
             &:hover {
                 background-color: #4cd137;
             }
+        }
+    }
+}
+
+footer {
+    background-color: #colors[headerColor];
+    padding: 16px 0;
+    text-align: center;
+    color: #fff;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            margin-bottom: 8px;
         }
     }
 }
